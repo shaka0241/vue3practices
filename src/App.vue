@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import Counter from './components/Counter.vue';
-import Refexample from './components/Refexample.vue';
+import Counter from './components/Practices/Counter.vue';
+import Refexample from './components/Practices/Refexample.vue';
+import Visible from './components/Practices/Visible.vue';
 
 </script>
 
@@ -8,6 +9,7 @@ import Refexample from './components/Refexample.vue';
 
 <Refexample />
 <Counter />
+<Visible />
 
 </template>
 
