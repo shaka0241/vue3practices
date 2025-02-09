@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 <div>
     <p>Contador: {{ count }}</p>
 <button @click="increment">Incrementar</button>
@@ -26,4 +26,19 @@ function reset() {
 </script>
 
 <style scoped>
-</style>
+</style> -->
+
+<template>
+    <div>
+      <p>Contador: {{ counterStore.count }}</p>
+      <button @click="counterStore.increment">Incrementar</button>
+    </div>
+  </template>
+  
+  <script setup lang="ts">
+import { useCounterStore } from '../../stores/counterStore';
+
+  
+  const counterStore = useCounterStore();
+  </script>
+  
